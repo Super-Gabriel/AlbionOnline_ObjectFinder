@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF8"?>
+
+<project name="build_HttpManager" default="build" basedir=".">
+  
+  <!--borrar los archivos generados -->
+  <target name="clean" description="borra elementos generados">
+    <delete dir="build"/>
+  </target>
+
+  <!--generar los archivos -->
+  <target name="build" description="genera los .class">
+    <mkdir dir="build/classes"/>
+    <javac srcdir="src" destdir="build/classes" debug="true" debuglevel="lines,vars,source"/>
+  </target>
+
+  <!--crea ejecutable del programa
+  <target name="jar">
+    <antcall target="build"/>
+    <mkdir dir="build/jar"/>
+    <jar destfile="build/jar/Practica01.jar" basedir="build/classes">
+      <manifest>
+	<atribute name="SpendecyFinder" value="main"/>
+	<atribute name="MainClass" value="Practica01"/>
+      </manifest>
+    </jar>
+  </target>-->
+  
+  <!--corre el progreama -->
+  <target name="run" depends="build" description="ejecuta el programa">
+    <java classname="Main" fork="true">
+      <classpath>
+	<path location="build/classes"/>
+      </classpath>
+    </java>    
+  </target>
+      
+    
+  
+</project>
