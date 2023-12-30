@@ -3,7 +3,7 @@
  * @author - G4BR13L t(>.<t)
  * @version - 1.0 | 16/03/03
  */
-import rsrc.BinarySearchTree;
+//import rsrc.BinarySearchTree;
 import rsrc.DoubleLinkedList;
     
 public class WordEngine<T>{
@@ -29,7 +29,7 @@ public class WordEngine<T>{
 	DoubleLinkedList items = new DoubleLinkedList();
 	DoubleLinkedList coinCList = new DoubleLinkedList();
 	
-	BinarySearchTree tree = new BinarySearchTree();
+	//BinarySearchTree tree = new BinarySearchTree();
 	String w = word.toUpperCase();//palabra en mayus
 	String thisW = "";//variable para las palabras de la lista
 	
