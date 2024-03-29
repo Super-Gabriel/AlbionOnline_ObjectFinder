@@ -1,5 +1,5 @@
 # Albion Online Object Finder
-A tool for albion online implemented on java using the API (The Albion Online Data Project).
+A tool for albion online implemented on java using the API (The Albion Online Data Project). With this tool you can search for an object or item from albion online, instead of going from city to city looking for a better price, the tool will show you average price, maximum price and minimum price of the item you are looking for.
 
 ## How to use
 this tool is structured like an Ant project so you may need [**Apache-Ant**](https://ant.apache.org/bindownload.cgi) and [**Java**](https://www.java.com/en/)
